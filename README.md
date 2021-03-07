@@ -1,7 +1,7 @@
 # Kickstarter Analysis
 
 ## Overview of Project 
-The purpose of this analysis is to filter and visualize data that will help my client Louise launch a successful fundraising campaign for her play, “Fever”. To aid Louise, I have looked at data points from successful and unsuccessful Kickstarter campaigns similar to hers, in order to give insight on the specific factors that might contribute to success or failure. 
+The purpose of this analysis is to filter and visualize data that will help Louise launch a successful fundraising campaign for her play, “Fever”. To aid Louise, I have utilized data points from successful and unsuccessful Kickstarter campaigns similar to hers, in order to give insight on the specific factors that might contribute to success or failure. 
 
 ## Analysis and Challenges
 
@@ -39,8 +39,11 @@ Then I wanted to populate columns that totaled the number of successful kickstar
 ```
 =COUNTIFS('Kickstarter Data'!$D:$D,"<1000",'Kickstarter Data'!$F:$F,"successful",'Kickstarter Data'!Q:Q,"plays")
 ```
-I ran a similar formula for the “Number Failed” column, and then used ```Sum()``` to populate the total projects column in order to create columns for “Percentage Successful” and “Percentage Failed”
+I ran a similar formula for the “Number Failed” column, and then used ```Sum()``` to populate the total projects column in order to create columns for “Percentage Successful” and “Percentage Failed. From [this table](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Goals%20Percentage%20Table.png) I created a line graph:
+<p align="center"
 
+![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Outcomes_vs_Goals.png)
+</p>
 
 
 
