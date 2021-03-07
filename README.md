@@ -18,7 +18,7 @@ We can see that the biggest gap between successful campaigns and failed campaign
 
 <p align="center"
 
-![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Launch%20date%20percentages.png)
+![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Launch%20Success%20percentages.png)
 
 </p>
 
