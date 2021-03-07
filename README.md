@@ -16,6 +16,11 @@ From the data in the pivot table, I created a line chart to visualize the relati
 </p>
 We can see that the biggest gap between successful campaigns and failed campaigns occurs in May and carries over into June. To further clarify this relationship, I made a new column that displays the percentage of successful campaigns for each month, along with the mean:
 
+<p align="center"
+
+![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Launch%20date%20percentages.png)
+
+</p>
 
 
 
