@@ -29,17 +29,17 @@ A challenge proposed during this analysis was that the data set only had one col
 
 ### Analysis of Outcomes Based on Goals
 
-Using the same Kickstarter data, I was able to look at the fundraiser goal amount and how it might be correlated with a successful or unsuccessful outcome. To do this I made broke up the goal amounts into 12 ranges:
+Using the same Kickstarter data, I was able to look at the fundraiser goal amount and how it might be correlated with a successful or unsuccessful outcome. To do this I broke up the goal amounts into 12 ranges:
 <p align="center"
 
 ![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Goal%20Range.png)
 </p>
 
-Then I wanted to populate columns that totalled the number of successful kickstarter campaigns that had the subcategory “plays” for each goal range. In order to populate the columns “Number Successful”, “Number Failed” I had to use the =countifs() function for each goal range. For example this is the formula used to populate the cell corresponding to “Number Successful” in the “<1000” goal range:
+Then I wanted to populate columns that totaled the number of successful kickstarter campaigns that had the subcategory “plays” for each goal range. In order to populate the columns “Number Successful”, “Number Failed” etc. I had to use the =countifs() function for each goal range. For example this is the formula used to populate the cell corresponding to “Number Successful” in the “<1000” goal range:
 ```
 =COUNTIFS('Kickstarter Data'!$D:$D,"<1000",'Kickstarter Data'!$F:$F,"successful",'Kickstarter Data'!Q:Q,"plays")
 ```
-I ran a similar formula for the “Number Failed” column, and then created the total projects column in order  to populate columns for “Percentage Successful” and “Percentage Failed”
+I ran a similar formula for the “Number Failed” column, and then used ```Sum()``` to populate the total projects column in order to create columns for “Percentage Successful” and “Percentage Failed”
 
 
 
