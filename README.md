@@ -21,6 +21,15 @@ We can see that the biggest gap between successful campaigns and failed campaign
 ![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Launch%20Success%20percentages.png)
 
 </p>
+We can see from the data that the highest success rate occurs in May at 66.87%, and the next highest rate isn't far off at 65.36% in June. It is worth noting that those months also have the largest amount of data points, May: 166, and June: 153. Conversely, December has the lowest amount of campaigns launched, and the lowest success rate by far at 49.33%. 
+
+### Challenges
+
+A challenge proposed during this analysis was that the data set only had one column that displayed both category and subcategory. In order to filter for “Theater” in my pivot table I would need to create two columns, ‘Parent Category’ and “Subcategory”. I was able to do this by using the ‘Convert texts to Columns Wizard” to extract the parent category and the subcategory into new columns respectively. 
+
+
+
+
 
 
 
