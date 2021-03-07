@@ -1,7 +1,7 @@
 # Kickstarter Analysis
 
 ## Overview of Project 
-The purpose of this analysis is to review and visualize data that will help my client Louise launch a successful fundraising campaign for her play, “Fever”. To aid Louise, I have looked at data points from successful and unsuccessful Kickstarter campaigns similar to hers, in order to give insight on the specific factors that might contribute to success or failure. 
+The purpose of this analysis is to filter and visualize data that will help my client Louise launch a successful fundraising campaign for her play, “Fever”. To aid Louise, I have looked at data points from successful and unsuccessful Kickstarter campaigns similar to hers, in order to give insight on the specific factors that might contribute to success or failure. 
 
 ## Analysis and Challenges
 
@@ -14,7 +14,7 @@ From the data in the pivot table, I created a line chart to visualize the relati
 ![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Theater_Outcomes_vs_Launch.png)
 
 </p>
-
+We can see that the biggest gap between successful campaigns and failed campaigns occurs in May and carries over into June. To further clarify this relationship, I made a new column that displays the percentage of successful campaigns for each month, along with the mean:
 
 
 
