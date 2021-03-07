@@ -21,11 +21,25 @@ We can see that the biggest gap between successful campaigns and failed campaign
 ![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Launch%20Success%20percentages.png)
 
 </p>
-We can see from the data that the highest success rate occurs in May at 66.87%, and the next highest rate isn't far off at 65.36% in June. It is worth noting that those months also have the largest amount of data points, May: 166, and June: 153. Conversely, December has the lowest amount of campaigns launched, and the lowest success rate by far at 49.33%. 
+We can see from the data that the highest success rate occurs in May at 66.87%, and the next highest rate isn't far off at 65.36% in June. It is worth noting that those months also have the largest amount of data points, May: 166, and June: 153. Conversely, December has the lowest amount of campaigns launched (75), and the lowest success rate by far at 49.33%. 
 
 ### Challenges
 
 A challenge proposed during this analysis was that the data set only had one column that displayed both category and subcategory. In order to filter for “Theater” in my pivot table I would need to create two columns, ‘Parent Category’ and “Subcategory”. I was able to do this by using the ‘Convert texts to Columns Wizard” to extract the parent category and the subcategory into new columns respectively. 
+
+### Analysis of Outcomes Based on Goals
+
+Using the same Kickstarter data, I was able to look at the fundraiser goal amount and how it might be correlated with a successful or unsuccessful outcome. To do this I made broke up the goal amounts into 12 ranges:
+<p align="center"
+
+![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Goal%20Range.png)
+</p>
+
+Then I wanted to populate columns that totalled the number of successful kickstarter campaigns that had the subcategory “plays” for each goal range. In order to populate the columns “Number Successful”, “Number Failed” I had to use the =countifs() function for each goal range. For example this is the formula used to populate the cell corresponding to “Number Successful” in the “<1000” goal range:
+```
+=COUNTIFS('Kickstarter Data'!$D:$D,"<1000",'Kickstarter Data'!$F:$F,"successful",'Kickstarter Data'!Q:Q,"plays")
+```
+I ran a similar formula for the “Number Failed” column, and then created the total projects column in order  to populate columns for “Percentage Successful” and “Percentage Failed”
 
 
 
