@@ -39,7 +39,7 @@ Then I wanted to populate columns that totaled the number of successful kickstar
 ```
 =COUNTIFS('Kickstarter Data'!$D:$D,"<1000",'Kickstarter Data'!$F:$F,"successful",'Kickstarter Data'!Q:Q,"plays")
 ```
-I ran a similar formula for the “Number Failed” column, and then used ```Sum()``` to populate the total projects column in order to create columns for “Percentage Successful” and “Percentage Failed. From [this table](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Goals%20Percentage%20Table.png) I created a line graph:
+I ran a similar formula for the “Number Failed” column, and then used ```Sum()``` to populate the total projects column in order to create columns for “Percentage Successful” and “Percentage Failed". From [this table](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/74c29544121803e92397e11537b05c90b874be35/Goals%20Table.png) I created a line graph:
 <p align="center"
 
 ![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Outcomes_vs_Goals.png)
@@ -53,6 +53,20 @@ For example, to produce the correct figures for the "Successful" column, in the 
 =COUNTIFS('Kickstarter Data'!$D:$D,">=20000",'Kickstarter Data'!$D:$D,"<25000",'Kickstarter Data'!$F:$F,"successful",'Kickstarter Data'!Q:Q,"plays")
 ```
 Which took a couple tries to make sure I input the correct range requirements, as well as reference the correct columns from the 'Kickstarter Data' worksheet.
+
+## Results
+
+### Outcomes Based on Launch Date
+
+We can safely conclude that the ideal launch date is within the months of May and June. There are a significant amount of data points for these months, making a strong case that the high success rates of campaigns launched in those months isn't a fluke. One limitation, or variable that we have overlooked is that we are looking at the launch month for any year, and it might be the case that the success rate of a particular month was completely different from year to another and there are other factors to consider. The supplemental [table](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Launch%20Success%20percentages.png) that I have provided is neccessary to help illustrate the success rate in a percentage, to help show the relative success from month to month.
+
+### Outcomes Based on Goals
+
+The [Line Graph]((https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Outcomes_vs_Goals.png) clearly illustrates a negative correlation between goal amount and success. This of course means that the higher the goal amount was for a campaign similar to Louise's, the less likely it was to be met. One big limitation with this data is that for goal ranges over 25,000, there are not many data points after we filter for campaigns that are similar to Louise's. That is, for our first five goal ranges, we have over 1000 data points, and for the last seven goal ranges, we have only 42 data points. Thus we cannot say much about the success or failure of campaigns that had a goal range of over 25,000 because there simply isnt enough data to for the information to be statistically significant.
+
+### Conclusion
+
+Im conclusion, Louise should aim to launch her Kickstarter campaign ideally in May or June,with those months boasting the highest success rates for similar campaigns,  and a goal of less then 25,000. However, as we noted previously, there sin't much data for campaigns that had a goal amount over 25,000, but we can still conclude that a lower goal amount is correlated with a higher rate of success for under 25,000$.
 
 
 
