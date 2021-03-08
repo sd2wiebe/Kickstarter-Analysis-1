@@ -45,6 +45,14 @@ I ran a similar formula for the “Number Failed” column, and then used ```Sum
 ![alttext](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Outcomes_vs_Goals.png)
 </p>
 
+We can see from the table and the graph that a higher success rate is correlated with a lower goal range.
+### Challenges
+One of the challenges associated with producing [the table]() was using the correct formula for each ```Countifs``` statment.
+For example, to produce the correct figures for the "Successful" column, in the 20,000-24,999 row, I used this formula:
+```
+=COUNTIFS('Kickstarter Data'!$D:$D,">=20000",'Kickstarter Data'!$D:$D,"<25000",'Kickstarter Data'!$F:$F,"successful",'Kickstarter Data'!Q:Q,"plays")
+```
+Which took a couple tries to make sure I input the correct range requirements, as well as reference the correct columns from the 'Kickstarter Data' worksheet.
 
 
 
