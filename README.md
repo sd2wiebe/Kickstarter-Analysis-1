@@ -47,7 +47,7 @@ I ran a similar formula for the “Number Failed” column, and then used ```Sum
 
 We can see from the table and the graph that a higher success rate is correlated with a lower goal range.
 ### Challenges
-One of the challenges associated with producing [the table]() was using the correct formula for each ```Countifs``` statment.
+One of the challenges associated with producing [the table](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/74c29544121803e92397e11537b05c90b874be35/Goals%20Table.png) was using the correct formula for each ```Countifs``` statment.
 For example, to produce the correct figures for the "Successful" column, in the 20,000-24,999 row, I used this formula:
 ```
 =COUNTIFS('Kickstarter Data'!$D:$D,">=20000",'Kickstarter Data'!$D:$D,"<25000",'Kickstarter Data'!$F:$F,"successful",'Kickstarter Data'!Q:Q,"plays")
@@ -62,7 +62,7 @@ We can safely conclude that the ideal launch date is within the months of May an
 
 ### Outcomes Based on Goals
 
-The [Line Graph]((https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Outcomes_vs_Goals.png) clearly illustrates a negative correlation between goal amount and success. This of course means that the higher the goal amount was for a campaign similar to Louise's, the less likely it was to be met. One big limitation with this data is that for goal ranges over 25,000, there are not many data points after we filter for campaigns that are similar to Louise's. That is, for our first five goal ranges, we have over 1000 data points, and for the last seven goal ranges, we have only 42 data points. Thus we cannot say much about the success or failure of campaigns that had a goal range of over 25,000 because there simply isnt enough data to for the information to be statistically significant.
+The [Line graph](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Outcomes_vs_Goals.png) clearly illustrates a negative correlation between goal amount and success. This of course means that the higher the goal amount was for a campaign similar to Louise's, the less likely it was to be met. One big limitation with this data is that for goal ranges over 25,000, there are not many data points after we filter for campaigns that are similar to Louise's. That is, for our first five goal ranges, we have over 1000 data points, and for the last seven goal ranges, we have only 42 data points. Thus we cannot say much about the success or failure of campaigns that had a goal range of over 25,000 because there simply isnt enough data to for the information to be statistically significant.
 
 ### Conclusion
 
