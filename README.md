@@ -66,7 +66,7 @@ The [Line graph](https://github.com/sd2wiebe/Kickstarter-Analysis-1/blob/main/Ou
 
 ### Conclusion
 
-nm conclusion, Louise should aim to launch her Kickstarter campaign ideally in May or June, with those months boasting the highest success rates for similar campaigns,  and a goal of less then 25,000$. However, as we noted previously, there isn't much data for campaigns that had a goal amount over 25,000$, but we can still conclude that a lower goal amount is correlated with a higher rate of success for campaigns under 25,000$. We wish Louise the best of luck with her Kickstarter!
+in conclusion, Louise should aim to launch her Kickstarter campaign ideally in May or June, with those months boasting the highest success rates for similar campaigns,  and a goal of less then 25,000$. However, as we noted previously, there isn't much data for campaigns that had a goal amount over 25,000$, but we can still conclude that a lower goal amount is correlated with a higher rate of success for campaigns under 25,000$. We wish Louise the best of luck with her Kickstarter!
 
 
 
